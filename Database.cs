@@ -5,7 +5,7 @@ namespace Flashcards
 {
     class Database
     {
-        public string connectionString = ConfigurationManager.ConnectionStrings["connectionString"].ConnectionString;
+        private string connectionString = ConfigurationManager.ConnectionStrings["connectionString"].ConnectionString;
         internal void CreateTable()
         {
             using (var conn = new SqlConnection(connectionString))

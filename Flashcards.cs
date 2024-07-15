@@ -6,8 +6,7 @@ namespace Flashcards
 {
     class FlashcardsController
     {
-        public string connectionString = ConfigurationManager.ConnectionStrings["connectionString"].ConnectionString;
-
+        private string connectionString = ConfigurationManager.ConnectionStrings["connectionString"].ConnectionString;
         internal List<FlashcardModel> ReadFlashcards(int id)
         {
             TableVisualisation tableVisualisation = new();

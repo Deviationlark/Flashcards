@@ -6,8 +6,7 @@ namespace Flashcards
 {
     class StacksController
     {
-        public string connectionString = ConfigurationManager.ConnectionStrings["connectionString"].ConnectionString;
-        
+        private string connectionString = ConfigurationManager.ConnectionStrings["connectionString"].ConnectionString;
         internal List<StackModel> ViewStacks()
         {
             var stacks = new List<StackModel>();

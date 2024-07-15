@@ -6,7 +6,7 @@ namespace Flashcards
 {
     class StudyController
     {
-        public string connectionString = ConfigurationManager.ConnectionStrings["connectionString"].ConnectionString;
+        private string connectionString = ConfigurationManager.ConnectionStrings["connectionString"].ConnectionString;
         internal int ReadRandomFlashcards(int id)
         {
             TableVisualisation tableVisualisation = new();
